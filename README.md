@@ -1,2 +1,4 @@
 # mimic-board
-Simulates the logical layout of a software system
+
+Simulation of the logical layout of a software system
+
