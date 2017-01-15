@@ -2,7 +2,6 @@
 
 Simulation of the logical layout of a software system
 
-
 # Development
 
 Install `leiningen` with:
@@ -11,5 +10,5 @@ Install `leiningen` with:
 
 Start REPL and browser with:
 
-    lein repl
+    lein figwheel
     open http://localhost:3449/index.html
