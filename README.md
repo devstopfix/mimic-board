@@ -12,3 +12,7 @@ Start REPL and browser with:
 
     lein figwheel
     open http://localhost:3449/index.html
+
+# Credits
+
+* [autolayout.js](https://github.com/IjzerenHein/autolayout.js) engine by [Hein Retjes](https://github.com/IjzerenHein)

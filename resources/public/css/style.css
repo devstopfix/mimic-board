@@ -8,6 +8,19 @@ h1 {
   font-family: sans-serif;
 }
 
+h2 {
+  color: #268bd2;
+}
+
+
+/* Autolayout */
+
+div.abs {
+ position: absolute;
+ padding: 0;
+ margin: 0;
+}
+
 
 /* Autolayout demo */
 

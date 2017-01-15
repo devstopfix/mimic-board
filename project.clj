@@ -1,4 +1,4 @@
-(defproject mimic.board "0.1.0"
+(defproject mimic.board "0.2"
   :description "Mimic Board"
   :url "https://github.com/devstopfix/mimic-board"
   :license {:name "MIT License"
@@ -8,8 +8,8 @@
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.293"]
-                 [org.clojure/core.async "0.2.395"
-                  :exclusions [org.clojure/tools.reader]]]
+                 [org.clojure/core.async "0.2.395" :exclusions [org.clojure/tools.reader]]
+                 [reagent "0.6.0"]]
 
   :plugins [[lein-figwheel "0.5.8"]
             [lein-cljsbuild "1.1.4" :exclusions [[org.clojure/clojure]]]]
@@ -92,7 +92,7 @@
   ;; https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl
 
 
-  :profiles {:dev {:dependencies [[binaryage/devtools "0.8.2"]
+  :profiles {:dev {:dependencies [[binaryage/devtools "0.8.3"]
                                   [figwheel-sidecar "0.5.8"]
                                   [com.cemerick/piggieback "0.2.1"]]
                    ;; need to add dev source path here to get user.clj loaded

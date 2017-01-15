@@ -58,17 +58,12 @@ function autoLayout(parentElm, visualFormat) {
     return updateLayout;
 }
 
-// main layout
-autoLayout(undefined, [
-    '|-[left(right)]-[right]-|',
-    'V:|-[left]-|\nV:|-[right]-|'
-]);
 
 // left layout (EVFL)
-autoLayout(document.getElementById('left'), [
-    'V:|-[col:[text(20)]-[vfl(evfl)]-[text2(text)]-[evfl]]-|',
-    '|-[col]-|'
-]);
+//autoLayout(document.getElementById('left'), [
+//    'V:|-[col:[text(20)]-[vfl(evfl)]-[text2(text)]-[evfl]]-|',
+//    '|-[col]-|'
+//]);
 
 // right example layout
 var exampleVFL = [
@@ -78,8 +73,7 @@ var exampleVFL = [
     'V:|-[child1(child2)]-[child2]-|',
     'V:|-[child3(child4,child5)]-[child4]-[child5]-|'
 ];
-autoLayout(document.getElementById('right'), exampleVFL);
-document.getElementById('vfl').innerHTML = exampleVFL.join('\n');
+//autoLayout(document.getElementById('right'), exampleVFL);
 
 // same example expressed as EVFL
 var exampleEVFL = [
@@ -87,4 +81,5 @@ var exampleEVFL = [
     'V:|-[col2:[child3(child4,child5)]-[child4]-[child5]]-|',
     'H:|-[col1(col2)]-[col2]-|'
 ];
-document.getElementById('evfl').innerHTML = exampleEVFL.join('\n');
+
+window.runAutoLayout = function (parentElm, visualFormat) {autoLayout(parentElm, visualFormat)};
